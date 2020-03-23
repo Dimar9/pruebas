@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  /* Box sizing. Thanks Chris Coyier! */
+  position: relative;
+}
+
+body {
+  background: #222;
+  color: #fff;
+  font-size: 10px;
+}
+
+em, em:after, em:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+em {
+  font-size: 3rem;
+  font-size: 10vmin;
+  line-height: 6rem;
+  /* Set line-height to double the font-size. */
+  line-height: 20vmin;
+  margin: 0 auto;
+}
+
+li {
+  cursor: pointer;
+  float: left;
+  height: 20vmin;
+  text-align: center;
+  width: 20vmin;
+}
+
+li:nth-child(1) {
+  background: #6fc9d8;
+}
+
+li:nth-child(2) {
+  background: #ea5c5c;
+}
+
+li:nth-child(3) {
+  background: #93d87c;
+}
+
+li:nth-child(4) {
+  background: #bc927a;
+}
+
+a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+li > em {
+  display: none;
+  margin: auto;
+}
+
+li:nth-child(1) > em li:nth-child(1) {
+  background: #bc927a;
+}
+
+li:hover > em {
+  display: block;
+}
+
+li:active > em, li:focus > em {
+  display: block;
+  outline: none;
+}
